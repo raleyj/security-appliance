@@ -35,8 +35,17 @@ The complete reviewed source tree is distributed as [`security-appliance-1.0-ga-
 - `docs/` – architecture, deployment, and security documentation.
 - `release/` – GA checksum and verification notes.
 
+## Documentation
+
+- [Deployment guide](Security-Appliance-Deployment-Guide.docx)
+- [User guide](Security-Appliance-User-Guide.docx)
+- [Troubleshooting guide](Security-Appliance-Troubleshooting-Guide.docx)
+- [Logical architecture diagram](Security-Appliance-Logical-Architecture.png)
+- [Deployment summary](DEPLOYMENT.md)
+- [Security model](SECURITY.md)
+
 ## Release
 
 The current appliance release is **1.0 GA**. The vSphere OVA is produced by the sealed-release workflow with blank deployment secrets and a fresh data disk. Verify any distributed OVA against [`Lab-Security-Appliance-1.0-GA.ova.sha256`](Lab-Security-Appliance-1.0-GA.ova.sha256) before import.
 
-See [Deployment](DEPLOYMENT.md), [Security model](SECURITY.md), and the [architecture document](Security-Appliance-Architecture.docx).
+The documentation above covers deployment, administration, troubleshooting, security, and logical architecture for the 1.0 GA release.
