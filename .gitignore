@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+build/full-container-bundle/
+*.tar
+*.iso
+*.ova
+*.ovf
+*.vmdk
+*.nvram
+*.sau

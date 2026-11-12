@@ -1,0 +1,14 @@
+[Unit]
+Description=Lab Security Appliance bounded first boot
+After=vmtoolsd.service docker.service
+Wants=vmtoolsd.service docker.service
+ConditionPathExists=!/etc/security-appliance/installed
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/python3 /opt/security-appliance/provisioning/firstboot.py
+TimeoutStartSec=1800
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target

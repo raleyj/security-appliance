@@ -24,9 +24,7 @@ Security Appliance is a deployable VMware vSphere appliance that combines identi
 - Health, storage, certificate, firewall, DNS, NTP, and alert status from one interface.
 - Syslog, HTTPS webhook, and Mattermost health-alert delivery.
 
-## Source package
-
-The complete reviewed source tree is distributed as [`security-appliance-1.0-ga-source.zip`](security-appliance-1.0-ga-source.zip). Verify it with [`security-appliance-1.0-ga-source.zip.sha256`](security-appliance-1.0-ga-source.zip.sha256) before extracting it. The archive contains:
+## Repository layout
 
 - `app/` – management API and browser interface.
 - `provisioning/` – first boot, service configuration, firewall, certificates, updates, and recovery.
@@ -35,17 +33,15 @@ The complete reviewed source tree is distributed as [`security-appliance-1.0-ga-
 - `docs/` – architecture, deployment, and security documentation.
 - `release/` – GA checksum and verification notes.
 
-## Documentation
-
-- [Deployment guide](Security-Appliance-Deployment-Guide.docx)
-- [User guide](Security-Appliance-User-Guide.docx)
-- [Troubleshooting guide](Security-Appliance-Troubleshooting-Guide.docx)
-- [Logical architecture diagram](Security-Appliance-Logical-Architecture.png)
-- [Deployment summary](DEPLOYMENT.md)
-- [Security model](SECURITY.md)
-
 ## Release
 
-The current appliance release is **1.0 GA**. The vSphere OVA is produced by the sealed-release workflow with blank deployment secrets and a fresh data disk. Verify any distributed OVA against [`Lab-Security-Appliance-1.0-GA.ova.sha256`](Lab-Security-Appliance-1.0-GA.ova.sha256) before import.
+The current appliance release is **1.2 GA** (qualified build 1.2.18). The vSphere OVA is produced by the sealed-release workflow with blank deployment secrets and a fresh data disk. GitHub release assets provide the OVA in numbered parts because the complete image is larger than GitHub's per-asset limit. Reconstruct the OVA with the supplied script and verify it against `release/Lab-Security-Appliance-1.2-GA.ova.sha256` before import.
 
-The documentation above covers deployment, administration, troubleshooting, security, and logical architecture for the 1.0 GA release.
+## Documentation
+
+- [Deployment guide](docs/Security-Appliance-Deployment-Guide.docx)
+- [User guide](docs/Security-Appliance-User-Guide.docx)
+- [Troubleshooting guide](docs/Security-Appliance-Troubleshooting-Guide.docx)
+- [Logical architecture diagram](docs/Security-Appliance-Logical-Architecture.png)
+- [Deployment summary](docs/DEPLOYMENT.md)
+- [Security model](docs/SECURITY.md)
